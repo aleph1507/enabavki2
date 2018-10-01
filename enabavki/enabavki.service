@@ -1,0 +1,14 @@
+[Unit]
+Description=eNabavki
+
+[Service]
+ExecStart=/alephone/work/enabavki/execute_k1.js
+Restart=always
+User=nobody
+Group=nogroup
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/alephone/work/enabavki
+
+[Install]
+WantedBy=multi-user.target
